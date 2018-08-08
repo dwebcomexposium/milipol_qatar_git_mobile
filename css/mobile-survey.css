@@ -1,0 +1,221 @@
+/*
+
+	== Mobile
+	== Survey
+	.survey-vote --> .sv-##
+
+*/
+.sv-main-content {
+	font-family: Arial, sans-serif;
+	font-stretch: condensed;
+	font-size: 16px;
+	color: #878278;
+	position: relative;
+	padding: 0.5em;
+	margin: 1em 0;
+	border: 1px solid #910f4f;
+}
+
+.sv-title {
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #474d4e;
+  border-bottom: 1px solid #e3e9ea;
+}
+.with-results .sv-title {
+  border-bottom: 0;
+}
+.sv-title-total {
+  display: block;
+  padding-bottom: .5em;
+  font-size: 1.6rem;
+  font-weight: normal;
+  border-bottom: 1px solid #e3e9ea;
+}
+.sv-item {
+  padding: 0.75em 0.5em;
+  border-bottom: 4px solid #f6f9f9;
+}
+.sv-item .radio-title {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 0;
+  font-size: 1.4rem;
+}
+.sv-item .radio-title::after {
+  margin-top: .25em;
+}
+.sv-item .form-item-radio label {
+  padding-left: 2em;
+}
+.sv-item [type="radio"]:checked + label {
+  font-weight: bold;
+  color: #566e02;
+}
+.sv-item-button {
+  margin-top: 1.5em;
+}
+.sv-item-button [class^="btn"] {
+  padding-top: .65em;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.sv-item-button [class^="btn"] .icon {
+  display: none;
+}
+.sv-item-input {
+  display: block;
+  margin-left: 2em;
+}
+/*
+ * Loading
+ */
+.sv-main-content.is-loading .sv-content {
+  position: relative;
+}
+.sv-main-content.is-loading .sv-loading {
+  display: block;
+}
+.sv-loading {
+  display: none;
+  z-index: 20;
+  padding-top: 5em;
+  background: #FFF;
+}
+.sv-loading .spinner {
+  margin: auto;
+}
+.sv-loading-txt {
+  font-size: 1.8rem;
+  text-align: center;
+}
+/*
+ * Results
+ */
+.sv-list-result .sv-item {
+  padding: 0.5em 0;
+  border-bottom: 0;
+}
+.sv-list-result .sv-item.is-highlited {
+  color: #566e02;
+}
+.sv-result {
+  display: block;
+}
+.sv-result-color {
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 26px;
+  min-width: 3%;
+  max-width: 88%;
+  background: #afc0c3;
+  -webkit-transition: width .8s;
+          transition: width .8s;
+}
+.sv-result-txt {
+  margin-left: 0.5em;
+  font-size: 1.2rem;
+}
+.is-highlited .sv-result-color {
+  background: #a3c434;
+}
+.is-highlited .sv-result-txt {
+  color: #566e02;
+}
+.toanimate .sv-result-color {
+  width: 0% !important;
+}
+
+.comexposium-survey-page input.box.form-txt {
+	width: 100%;
+	border: 1px solid #b9ae6e;
+}
+.comexposium-survey-question-block fieldset {
+    display: block;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    -webkit-padding-after: 0;
+    min-width: -webkit-min-content;
+    border: 1px solid #b9ae6e;
+}
+
+.survey-vote h1 {
+	border: none;
+}
+
+
+.survey-vote strong {
+	font-family: 'Arial Narrow Bold', 'Arial Narrow', Arial, sans-serif;
+	font-stretch: condensed;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.survey-vote p {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-stretch: condensed;
+	font-size: 16px;
+	color: #878278;
+}
+
+.survey-vote .inside {
+	padding: 20px;
+}
+
+/* ------------------------------------------------------------- ReCaptcha	*/
+
+
+.comexposium-survey-question-block-recaptcha,
+.comexposium-survey-question-block-recaptcha .g-recaptcha,
+.comexposium-survey-question-block-recaptcha .g-recaptcha > div,
+.comexposium-survey-question-block-recaptcha .g-recaptcha > div > div,
+.comexposium-survey-question-block-recaptcha .g-recaptcha > div > div > iframe {
+	width: 100% !important;
+}
+
+.comexposium-survey-question-block-recaptcha .g-recaptcha > div > div > iframe {
+	height: 90px !important;
+}
+												/* Box */
+.rc-anchor-light {
+    border: 1px solid #b9ae6e !important;
+	width: 99% !important;
+}
+
+.rc-anchor-normal {
+    width: 99% !important;
+}
+												/* Coche + je ne suis pas un robot */
+.rc-anchor-normal .rc-anchor-content {
+    height: 90px !important;
+    width: 50% !important;
+}
+
+.rc-anchor-normal.rc-anchor-error .rc-anchor-content {
+    margin-top: 15px !important;
+}
+
+.rc-anchor-checkbox-label {
+    font-family: Roboto,helvetica,arial,sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+}
+												/* Confidentialité */
+.rc-anchor-normal .rc-anchor-pt {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: right;
+    width: 100% !important;
+    bottom: 5px !important;
+    right: 5px !important;
+}
+
